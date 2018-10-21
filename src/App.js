@@ -11,7 +11,7 @@ class App extends Component {
               <Link to="/" style={{marginRight: 10, paddingLeft: 10}}>Home</Link>
               <Link to="/recept">Recept</Link>
             <Route
-                path="/" render={routeProps => <Home {...routeProps} a={'b'}/>}/>
+               exact path="/" render={routeProps => <Home {...routeProps} a={'b'}/>}/>
               <Route
                   path="/recept" render={routeProps => <Recept {...routeProps} a={'b'}/>}/>
           </div>
